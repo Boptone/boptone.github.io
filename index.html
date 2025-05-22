@@ -229,24 +229,12 @@
         <section aria-labelledby="coming-soon-heading">
             <h3 id="coming-soon-heading" class="coming-soon">Coming Soon</h3>
             
-          <form id="waitlist-form" action="https://formsubmit.co/hello@boptone.com" method="POST">
-    <!-- Required for FormSubmit (prevents spam, sets email subject) -->
-    <input type="hidden" name="_subject" value="New Waitlist Signup!">
-    <input type="hidden" name="_template" value="basic">
-    <input type="hidden" name="_captcha" value="false"> <!-- Disable CAPTCHA -->
-    
-    <!-- Email Input (the only visible field) -->
-    <input 
-        type="email" 
-        name="email" 
-        placeholder="Enter your email" 
-        required
-        aria-label="Your email address"
-        autocomplete="email"
-    >
-    
-    <!-- Submit Button -->
-    <button type="submit">Join Waitlist</button>
+          <form id="waitlist-form" class="waitlist-form" action="https://formsubmit.co/hello@boptone.com" method="POST">
+                <div class="form-group">
+                    <label for="email-input" class="visually-hidden">Email address</label>
+                    <input type="email" id="email-input" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                <button type="submit" class="btn">Join the Waitlist</button>
     
     <!-- Honeypot Anti-Spam (hidden from users) -->
     <input type="text" name="_honey" style="display:none">
