@@ -1,4 +1,4 @@
-# 🎵 Boptone AI - Own Your Tone
+# Boptone - Own Your Tone
 
 **Your personal AI manager who learns your style, knows your goals, and helps you navigate every decision in your music career.**
 
