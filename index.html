@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Yj0gpn3NAsZI-W6rz-YffV2UjmnnPHROl2TKKMpBiwE" />
+    <title>Boptone - The Artist's Operating System: Own Your Tone.</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/Boptone_Logo.png" as="image">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Boptone - The Artist's Operating System: Own Your Tone.">
+    <meta name="description" content="Join the Boptone waitlist and be the first to experience our innovative platform where the future belongs to artists like you.">
+    <meta name="keywords" content="Boptone, audio platform, music, sound, artists, waitlist, coming soon, music technology, artist platform">
+    <meta name="author" content="Boptone">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boptone.com/">
+    <meta property="og:title" content="Boptone - The Artist's Operating System: Own Your Tone.">
+    <meta property="og:description" content="Join the Boptone waitlist and be the first to experience our innovative platform where the future belongs to artists like you.">
+    <meta property="og:image" content="https://boptone.github.io/social_sharing/boptone_social_share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://boptone.com/">
+    <meta property="twitter:title" content="Boptone - The Artist's Operating System: Own Your Tone.">
+    <meta property="twitter:description" content="Join the Boptone waitlist and be the first to experience our innovative platform where the future belongs to artists like you.">
+    <meta property="twitter:image" content="https://boptone.github.io/social_sharing/boptone_social_share.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333333;
+        }
+        
+        body {
+            background-color: #f9f5f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            max-width: 80%;
+            width: 700px;
+            margin-bottom: 40px;
+            transition: max-width 0.3s ease;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        .coming-soon {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        .waitlist-form {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            background-color: white;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #333;
+        }
+        
+        .btn {
+            background-color: #333333;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #555;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        
+        .slogan {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .location {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 10px;
+            }
+            
+            .logo {
+                max-width: 90%;
+                width: 350px;
+            }
+            
+            .tagline {
+                font-size: 20px;
+            }
+            
+            .coming-soon {
+                font-size: 22px;
+            }
+        }
+        
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(51, 51, 51, 0.1);
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        
+        /* Accessibility Improvements */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://boptone.com/#organization",
+      "name": "Boptone",
+      "url": "https://boptone.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://boptone.com/assets/Boptone_Logo.png",
+        "width": "700",
+        "height": "200"
+      },
+      "description": "Boptone is an innovative platform where the future belongs to artists like you.",
+      "slogan": "The Artist's Operating System: Own Your Tone.",
+      "foundingDate": "2025",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@boptone.com",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="visually-hidden">Boptone - The Artist's Operating System: Own Your Tone.</h1>
+    </header>
+    
+    <main class="container">
+        <img src="assets/Boptone_Logo.png" alt="Boptone Logo" class="logo">
+        <h2 class="tagline">The Artist's Operating System: Own Your Tone.</h2>
+        
+        <section aria-labelledby="coming-soon-heading">
+            <h3 id="coming-soon-heading" class="coming-soon">Coming Soon</h3>
+            
+            <form id="waitlist-form" class="waitlist-form" action="https://formsubmit.co/hello@boptone.com" method="POST">
+                <div class="form-group">
+                    <label for="email-input" class="visually-hidden">Email address</label>
+                    <input type="email" id="email-input" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group" style="margin-top: 15px; display: flex; align-items: flex-start;">
+                    <input type="checkbox" id="terms-checkbox" name="terms-accepted" style="margin-right: 10px; margin-top: 3px;" required>
+                    <label for="terms-checkbox" style="font-size: 13px; line-height: 1.4; color: #666;">
+                        I agree to the <a href="terms_of_service.html" style="color: #333; text-decoration: underline;">Terms of Service</a> and <a href="privacy_policy.html" style="color: #333; text-decoration: underline;">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn" style="margin-top: 20px;">Join the Waitlist</button>
+                
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://boptone.com/thanks.html">
+                
+                <!-- Prevent spam -->
+                <input type="text" name="_honey" style="display:none">
+                
+                <!-- Disable captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- Email subject -->
+                <input type="hidden" name="_subject" value="New Boptone Waitlist Signup!">
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        Boptone&trade; &copy; 2025 Acid Bird, Inc. All Rights Reserved.
+        <span class="slogan"></span>
+        <div class="location">Built in Los Angeles</div>
+        <div class="legal-links" style="margin-top: 15px; font-size: 12px;">
+            <a href="terms_of_service.html" style="color: #666; margin: 0 10px; text-decoration: none;">Terms of Service</a>
+            <a href="privacy_policy.html" style="color: #666; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple form submission handling
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            // FormSubmit.co will handle the actual submission
+            // This is just for visual feedback
+            localStorage.setItem('formSubmitted', 'true');
+        });
+        
+        // Check if form was previously submitted (for when user returns after submission)
+        window.onload = function() {
+            if (window.location.search.includes('success=true') || localStorage.getItem('formSubmitted') === 'true') {
+                document.getElementById('waitlist-form').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>
