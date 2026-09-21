@@ -3,51 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0a0a0a">
     <title>Thank You - Boptone | The Artist's Operating System: Own Your Tone.</title>
-    
+
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assets/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="assets/Boptone_Logo.png" as="image">
-    
+    <link rel="preload" href="assets/boptone-logo.png" as="image">
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="Thank You - Boptone">
     <meta name="description" content="Thank you for joining the Boptone waitlist. We'll keep you updated on our progress.">
-    <meta name="keywords" content="Boptone, audio platform, music, sound, artists, waitlist, coming soon, music technology, artist platform">
+    <meta name="keywords" content="Boptone, music, artists, artist platform, music technology, waitlist, coming soon">
     <meta name="author" content="Boptone">
     <meta name="robots" content="noindex, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://boptone.com/thanks.html">
     <meta property="og:title" content="Thank You - Boptone">
     <meta property="og:description" content="Thank you for joining the Boptone waitlist. We'll keep you updated on our progress.">
-    <meta property="og:image" content="https://boptone.github.io/social_sharing/boptone_social_share.png">
+    <meta property="og:image" content="https://boptone.com/assets/boptone-social-share.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://boptone.com/thanks.html">
-    <meta property="twitter:title" content="Thank You - Boptone">
-    <meta property="twitter:description" content="Thank you for joining the Boptone waitlist. We'll keep you updated on our progress.">
-    <meta property="twitter:image" content="https://boptone.github.io/social_sharing/boptone_social_share.png">
-    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://boptone.com/thanks.html">
+    <meta name="twitter:title" content="Thank You - Boptone">
+    <meta name="twitter:description" content="Thank you for joining the Boptone waitlist. We'll keep you updated on our progress.">
+    <meta name="twitter:image" content="https://boptone.com/assets/boptone-social-share.png">
+
     <style>
+        :root {
+            --bg: #0a0a0a;
+            --bone: #e8dfd4;
+            --bone-muted: #a8a196;
+            --lime: #c3f116;
+            --field: #141414;
+            --line: #2e2e2e;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #333333;
         }
-        
+
         body {
-            background-color: #f9f5f0;
+            background-color: var(--bg);
+            color: var(--bone);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             padding: 20px;
         }
-        
+
+        a {
+            color: var(--bone);
+        }
+
+        a:hover {
+            color: var(--lime);
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--lime);
+            outline-offset: 3px;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -59,107 +88,116 @@
             justify-content: center;
             padding: 40px 20px;
         }
-        
+
         .logo {
-            max-width: 80%;
-            width: 700px;
-            margin-bottom: 40px;
-            transition: max-width 0.3s ease;
+            display: block;
+            width: min(100%, 720px);
+            height: auto;
+            margin-bottom: 48px;
         }
-        
+
         .breadcrumbs {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
             font-size: 14px;
             align-self: flex-start;
+            color: var(--bone-muted);
         }
-        
+
         .breadcrumbs a {
-            color: #333333;
             text-decoration: none;
-            transition: color 0.3s;
         }
-        
+
         .breadcrumbs a:hover {
-            color: #555;
             text-decoration: underline;
         }
-        
+
         .breadcrumbs span:not(:last-child)::after {
             content: ">";
             margin: 0 10px;
-            color: #999;
+            color: var(--bone-muted);
         }
-        
+
         .thank-you {
             font-size: 32px;
             margin-bottom: 20px;
             text-align: center;
             font-weight: 600;
         }
-        
+
         .message {
             font-size: 18px;
             margin-bottom: 40px;
             text-align: center;
             line-height: 1.6;
+            color: var(--bone-muted);
         }
-        
+
         .btn {
-            background-color: #333333;
-            color: white;
+            background-color: var(--lime);
+            color: #0a0a0a;
             border: none;
             padding: 12px 24px;
             font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
             border-radius: 4px;
             text-decoration: none;
             transition: background-color 0.3s;
             display: inline-block;
         }
-        
+
         .btn:hover {
-            background-color: #555;
+            background-color: var(--bone);
+            color: #0a0a0a;
         }
-        
+
         .footer {
             text-align: center;
             padding: 20px;
             font-size: 14px;
+            color: var(--bone-muted);
         }
-        
-        .slogan {
-            display: block;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        
+
         .location {
             margin-top: 5px;
             font-size: 12px;
-            color: #666;
         }
-        
+
+        .legal-links {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+
+        .legal-links a {
+            color: var(--bone-muted);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            color: var(--lime);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px 10px;
             }
-            
+
             .logo {
-                max-width: 90%;
-                width: 350px;
+                margin-bottom: 36px;
             }
-            
+
             .thank-you {
                 font-size: 28px;
             }
-            
+
             .message {
                 font-size: 16px;
             }
         }
-        
+
         /* Accessibility Improvements */
         .visually-hidden {
             position: absolute;
@@ -172,7 +210,7 @@
             border: 0;
         }
     </style>
-    
+
     <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
     {
@@ -187,14 +225,14 @@
         "@id": "https://boptone.com/#website",
         "url": "https://boptone.com",
         "name": "Boptone - The Artist's Operating System: Own Your Tone.",
-        "description": "Join the Boptone waitlist and be the first to experience our innovative platform where the future belongs to artists like you.",
+        "description": "Boptone is quietly building something to take the business side off artists' plates. Less admin, more art.",
         "publisher": {
           "@type": "Organization",
           "@id": "https://boptone.com/#organization",
           "name": "Boptone",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://boptone.com/assets/Boptone_Logo.png"
+            "url": "https://boptone.com/assets/boptone-logo.png"
           }
         }
       },
@@ -221,7 +259,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://boptone.com/social_sharing/boptone_social_share.png"
+        "url": "https://boptone.com/assets/boptone-social-share.png"
       },
       "datePublished": "2025-05-22T00:00:00+00:00",
       "dateModified": "2025-05-22T00:00:00+00:00",
@@ -233,28 +271,27 @@
     <header>
         <h1 class="visually-hidden">Thank You - Boptone</h1>
     </header>
-    
+
     <main class="container">
         <nav class="breadcrumbs" aria-label="breadcrumbs">
             <span><a href="/">Home</a></span>
             <span>Thank You</span>
         </nav>
-        
-        <img src="assets/Boptone_Logo.png" alt="Boptone Logo" class="logo">
-        
+
+        <img src="assets/boptone-logo.png" alt="Boptone" class="logo" width="1440" height="600">
+
         <h2 class="thank-you">Thank You!</h2>
         <p class="message">You've successfully joined our waitlist. We'll keep you updated on our progress.</p>
-        
+
         <a href="/" class="btn">Back to Home</a>
     </main>
-    
+
     <footer class="footer">
-        Boptone&trade; &copy; 2025 Acid Bird, Inc. All rights reserved.
-        <span class="slogan"></span>
+        Boptone&trade; &copy; 2026 Acid Bird, Inc. All rights reserved.
         <div class="location">Built in Los Angeles</div>
-        <div class="legal-links" style="margin-top: 15px; font-size: 12px;">
-            <a href="terms_of_service.html" style="color: #666; margin: 0 10px; text-decoration: none;">Terms of Service</a>
-            <a href="privacy_policy.html" style="color: #666; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+        <div class="legal-links">
+            <a href="terms_of_service.html">Terms of Service</a>
+            <a href="privacy_policy.html">Privacy Policy</a>
         </div>
     </footer>
 </body>
